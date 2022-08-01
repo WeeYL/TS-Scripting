@@ -172,15 +172,6 @@ I_extends_C01.disp(120,"yl")
 
 Header("class")
 
-// CLASS WITHOUT CONSTRUCTOR 
-class PersonAge {
-  age: number;
-  calMonth() { pp( `PersonAge ${this.age} in month: ${this.age*12} `)} 
-}
-
-let PersonName01 = new PersonAge()
-PersonName01.age=4
-PersonName01.calMonth()
 
 // CLASS WITH CONSTRUCTOR
 class Person {
