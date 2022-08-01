@@ -9,7 +9,7 @@ function Header(params) {
 Header("type");
 let TypeUnion1 = "TypeUnion";
 pp(TypeUnion1);
-let TypeUnion2 = 100;
+let TypeUnion2 = 1000;
 pp(TypeUnion2);
 let TypeUnionExact1 = "is-num";
 pp(TypeUnionExact1);

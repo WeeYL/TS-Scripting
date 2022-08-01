@@ -1,3 +1,5 @@
+// PRODUCTIVITY FUNCTIONS
+
 function pp(x: any) {
   console.log(x);
 }
@@ -6,6 +8,7 @@ function Header(params: any) {
   console.log(`--------------- ${params} `);
 }
 
+// TYPES
 Header("type");
 
 type TypeUnion = number | string;
@@ -13,13 +16,14 @@ type TypeUnionExact = "is-num" | "is-text";
 
 let TypeUnion1 = "TypeUnion";
 pp(TypeUnion1);
-let TypeUnion2 = 100;
+let TypeUnion2 = 1000;
 pp(TypeUnion2);
 let TypeUnionExact1 = "is-num";
 pp(TypeUnionExact1);
 
 let input: unknown; // input is of unknown type
 
+// TYPE EXTEND
 Header("type extend");
 
 type Access = { access: string[] };

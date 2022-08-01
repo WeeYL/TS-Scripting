@@ -1,15 +1,14 @@
 ### MODULE
 - npm i -g typescript
-- npm install express dotenv
-- npm install require-ts
-- npm i -D typescript @types/express @types/node
-
+- npm i ts-node
 ### CONFIG
 - tsc --init (tsconfig.json)
 - debug mode > create file > select <node> 
 
 ### RUN
-- terminal > ...\src> ts-node index.ts
+- terminal > ...\src> npx tsc
+- terminal > ...\src> npx tsc && ts-node index.ts
+- Open ts-scipting.html
 
 ### ERROR
 - ts.Debug.assert(typeof typeReferenceDirectiveName === "string", "Non-string value passed to `ts.
