@@ -26,15 +26,17 @@ let input: unknown; // input is of unknown type
 // TYPE EXTEND
 Header("type extend");
 
-type Access = { access: string[] };
+type Access = { access: string[] }; // define custom type and its property(s)
 type Empname = { name: string };
 type Employee = Access & Empname;
-let employee01: Access & Empname; // alternative employee01: Employee
+let employee01: Employee; 
 employee01 = {
   access: ["server", "password"],
   name: "YL",
 };
 pp(employee01);
+
+// ENUM
 
 Header("enum");
 
@@ -46,11 +48,13 @@ enum Role {
 pp(Role.ADMIN);
 pp(Role.READONLY);
 
+// FUNCTION 
 Header("function implement");
 
 function fi1(k: number) {
   pp(k);
 } // classic
+
 let fi2 = (k: number) => pp(k); // fat arrow
 let fi3: (k: number, v: number) => number; // assign a function type
 let fiadd = (k: number, v: number) => {
@@ -65,6 +69,7 @@ pp(fi3(3, 5));
 
 Header("function callback");
 // add a callback function type as an argument
+
 function handler(k: number, v: string, callback: (n: number) => void) {
   pp(v);
   return callback(k); // runs callback runs
